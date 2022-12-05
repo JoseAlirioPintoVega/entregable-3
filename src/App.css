@@ -1,0 +1,198 @@
+html{
+    
+    background-color: rgb(46, 43, 43);
+}
+body{
+    max-width: 1200px;
+    margin: auto;
+}
+.App{
+    color: white;
+}
+.App__header{
+    height: 330px;
+    max-width: 1300px;
+    background-image: url('https://netflixjunkie.com/wp-content/uploads/2022/09/Rick-Morty-Season-6EWKSF-feature-1140x600.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.form{
+   /*  justify-self: flex-end; */
+    margin-top: 4rem;
+    
+
+}
+.list{
+    position: absolute;
+    top: 320px;
+    width: 260px;
+    background-color: rgba(52, 34, 247, 0.911);
+    z-index: 100;
+    border-radius:  0 0 1rem 1rem;
+    
+    color: rgb(92, 236, 188);
+}
+.list .list__item{
+    list-style: none;
+    padding: 8px 0;
+    cursor: pointer;
+}
+.list .list__item:last-child{
+    list-style: none;
+    padding: 8px 0 1rem 0;
+    cursor: pointer;
+}
+.list .list__item:hover{
+    transform: scale(1.2);
+    background-color: rgba(52, 34, 247);
+    border-radius: 1rem;
+    color: white;
+}
+#inputSearch{
+    height: 30px;
+    width: 200px;
+    padding: 0;
+    font-size: 18px;
+    background-color: rgba(12, 0, 0, 0.596);
+    color: rgb(255, 255, 255);
+    border: 2px solid;
+    box-shadow: 2px 2px 10px 5px rgba(24, 2, 16, 0.822);
+}
+.btn__Search{
+    height: 34px;
+    width: 100px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(17, 1, 1, 0.63);
+    color: white;
+    cursor: pointer;
+    border: 2px solid;
+    box-shadow: 2px 2px 10px 5px rgba(8, 27, 56, 0.822);
+}
+.btn__Search:hover{
+    transform: scale(1.2);
+}
+.btn__Search:active{
+    transform: scale(1);
+}
+/*-------- location-------------*/
+.location__container{
+    height: 150px;
+    max-width: 1200px ;
+    margin: 20px;
+    display: grid;
+    place-content: center;
+    background-color: black;
+}
+.location__name{
+    text-align: center;
+}
+.location__info{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.location__info li{
+    list-style: none;
+    color: rgb(112, 108, 170);
+}
+.location__info span{
+ color: white;
+}
+
+/*-----------card------------------*/
+.resident-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-left: auto;
+ 
+}
+
+
+.container{
+
+    
+    background-image: url('https://netflixjunkie.com/wp-content/uploads/2022/09/Rick-Morty-Season-6EWKSF-feature-1140x600.webp');
+  
+    max-width: 260px;
+    margin: 8px;
+   
+}
+.card{
+    margin: 10px;
+    display: grid;
+}
+.card__header{
+    background-color: rgb(51 34 247);
+    margin: 12px 12px 0 12px;
+    padding: 4px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card__name{
+    text-align: center;
+    margin: 4px;
+}
+.card__img{
+    padding: 4px;
+    width: 200px;
+}
+.card__status{
+    position: absolute;
+    background-color: rgb(2, 2, 12);
+    padding: 4px 8px;
+    border-radius: 0 10px 10px  0 ;
+    top: 50px;
+    left: 8px; 
+    display: flex;
+    align-items: center;
+    gap: 8px ;
+}
+.card__status-circle{
+    width: 14px;
+    aspect-ratio: 1;
+    background-color: rgb(199, 218, 243);
+    border-radius: 50%;
+}
+.Alive{
+background-color: green;
+}
+.Dead{
+    background-color: red;
+}
+.card__main{
+    background-color: rgb(51 34 247);
+    padding: 0;
+    margin: 12px;
+    
+    border: 3px solid black;
+}
+.card__list{
+    margin: 0;
+    padding: 16px;
+}
+.card__item span{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(165, 165, 110);
+    margin-right: 8px;
+}
+.card__list .card__item{
+    list-style: none;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
